@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Harga - Depot Galon Sejahtera</title>
+    <style>
+        /* Reset dasar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #f4f4f9, #e9eef5);
+            color: #333;
+            line-height: 1.6;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #0056b3;
+            padding: 15px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        nav a:hover {
+            background-color: #007bff;
+            transform: scale(1.1);
+        }
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 30px auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #0056b3;
+            text-align: center;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        table tr:hover {
+            background-color: #e0f7fa;
+            transition: background-color 0.3s ease;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #0056b3;
+            color: white;
+            margin-top: 30px;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav a {
+                margin: 10px 0;
+            }
+            table {
+                font-size: 14px;
+            }
+            th, td {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="about.html">Tentang Kami</a>
+        <a href="price.html">Daftar Harga</a>
+        <a href="order.html">Pesan Sekarang</a>
+        <a href="alamat.html">Alamat</a>
+    </nav>
+    <section id="price" class="price-list">
+        <h2>Daftar Harga</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Produk</th>
+                    <th>Harga</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Galon Isi Ulang</td>
+                    <td>Rp 5,000</td>
+                </tr>
+                <tr>
+                    <td>Galon Baru</td>
+                    <td>Rp 50,000</td>
+                </tr>
+                <tr>
+                    <td>Galon + Air</td>
+                    <td>Rp 55,000</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <footer>
+        &copy; 2024 Depot Galon Sejahtera. Semua Hak Dilindungi.
+    </footer>
+</body>
+</html>
